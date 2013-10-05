@@ -121,7 +121,7 @@ class acf_field_columns extends acf_field
 	{
 		$class = str_replace( '/' , '_' , $field['column'] );
 
-		echo '<div class="acf-column column-layout-' . $class . '" data-id="' . $field['key'] . '" data-columns="' . $field['columns'] . '">&nbsp;</div>';
+		echo '<div class="acf-column column-layout-' . $class . '" data-id="' . $field['key'] . '" data-column="' . $field['column'] . '">&nbsp;</div>';
 	}
 
 
