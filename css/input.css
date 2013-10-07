@@ -24,6 +24,7 @@
 .acf-column .column-pad {
 	margin: 10px;
 	border: 1px solid #DFDFDF;
+	border-radius: 7px;
 	background: #F3F3F3;
 }
 
