@@ -3,11 +3,11 @@
 }
 
 .acf-column.column-layout-1_3 {
-	width: 33%;
+	width: 33.33333%;
 }
 
 .acf-column.column-layout-2_3 {
-	width: 66%;
+	width: 66.66666%;
 }
 
 .acf-column.column-layout-1_2 {
@@ -22,7 +22,9 @@
 }
 
 .acf-column .column-pad {
-	padding: 10px;
+	margin: 10px;
+	border: 1px solid #DFDFDF;
+	background: #F3F3F3;
 }
 
 .acf-column.column-layout-1 {
