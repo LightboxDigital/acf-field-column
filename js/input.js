@@ -19,12 +19,12 @@
 	$(document).live('acf/setup_fields', function(e, postbox){
 		$(postbox).find('.acf-column').each(function(){
 			var columns = $(this).data('column');
-			columns = columns.replace( '/' , '_' );
+			//columns = columns.replace( '/' , '_' );
 			var root = $(this).parents('.field_type-column');
 			$(root)	.nextUntil('.field_type-column, .field_type-tab')
 					.wrapAll('<div class="acf-column column-layout-' + columns + '"><div class="column-pad"></div></div>');
 		});
-		$(postbox).find('.acf_postbox .inside').append('<div class="acf-column column-layout-1">');
+		$(postbox).find('.acf_postbox .inside').append('<div class="acf-column-reset">');
 		$('.field_type-column').remove();
 	});
 

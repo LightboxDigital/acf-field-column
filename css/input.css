@@ -28,11 +28,16 @@
 	background: #F3F3F3;
 }
 
-.acf-column.column-layout-1 {
+.acf-column-reset {
 	float: none;
 	clear: both;
+	display: block;
 }
 
-.acf-column.column-layout-1 .column-pad {
+.acf-column-reset .column-pad {
 	padding: none;
+}
+
+.acf-column.acf-tab_group-show .acf-tab_group-hide {
+	display: block;
 }

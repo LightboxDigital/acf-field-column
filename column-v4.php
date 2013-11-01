@@ -25,11 +25,11 @@ class acf_field_columns extends acf_field
 		$this->defaults = array(
 			// add default here to merge into your field.
 			// This makes life easy when creating the field options as you don't need to use any if( isset('') ) logic. eg:
-			'column' => '1/2'
+			'column' => '1_2'
 		);
 
 		$this->settings = array(
-			'dir'	=>	get_template_directory_uri() . '/acf-field-type-column/'
+			'dir'	=>	get_template_directory_uri() . '/resources/acf-field-column/'
 			);
 
 
@@ -89,11 +89,11 @@ class acf_field_columns extends acf_field
 			// 'layout'  =>  'horizontal',
 			'choices' =>  array(
 				'1'			=>		'Reset',
-				'1/3'		=>		'One Third',
-				'2/3'		=>		'Two Thirds',
-				'1/2'		=>		'One Half',
-				'1/4'		=>		'One Quarter',
-				'3/4'		=>		'Three Quarters',
+				'1_3'		=>		'One Third',
+				'2_3'		=>		'Two Thirds',
+				'1_2'		=>		'One Half',
+				'1_4'		=>		'One Quarter',
+				'3_4'		=>		'Three Quarters',
 			)
 		));
 
@@ -119,9 +119,7 @@ class acf_field_columns extends acf_field
 
 	function create_field( $field )
 	{
-		$class = str_replace( '/' , '_' , $field['column'] );
-
-		echo '<div class="acf-column column-layout-' . $class . '" data-id="' . $field['key'] . '" data-column="' . $field['column'] . '">&nbsp;</div>';
+		echo '<div class="acf-column column-layout-' . $field['column'] . '" data-id="' . $field['key'] . '" data-column="' . $field['column'] . '">&nbsp;</div>';
 	}
 
 
